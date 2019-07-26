@@ -1,4 +1,3 @@
-For code explanation and additional configurations read the tutorial at https://javatutorial.net/java-servlet-example
 # 1.データベース環境作成 <p>
     ※環境構築はRHEL７である
     1)dockerのインストール
