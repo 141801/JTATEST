@@ -1,0 +1,18 @@
+version: '3.1'
+services:
+  mysql:
+    image: mysql:5.7
+    command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8 --collation-server=utf8_general_ci
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=MYSQL
+      - MYSQL_USER=MYSQL
+      - MYSQL_PASSWORD=MYSQL
+      - MYSQL_DATABASE=MYSQL
+    restart: always
+    networks:
+      - docker-network
+networks:
+  docker-network:
+    driver: bridge
